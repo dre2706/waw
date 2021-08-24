@@ -4,6 +4,8 @@
     AudioContext.resume();
   }
 
+document.getElementById( 'pad1' ).focus();
+
 //Pad 1
 pad1.addEventListener('click', function() {  
 
