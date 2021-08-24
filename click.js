@@ -5,52 +5,124 @@
   }
 
 //Pad 1
-pad1.addEventListener('click', function() {
-    audioElement1.load();
-    audioElement1.play();
+pad1.addEventListener('click', function() {  
+
+    // check if context is in suspended state (autoplay policy)
+    if (audioContext.state === 'suspended') {
+        audioContext.resume();
+    }
+
+    // play or pause track depending on state
+    if (this.dataset.playing === 'false') {
+        audioElement1.play();
+        this.dataset.playing = 'true';
+    } else if (this.dataset.playing === 'true') {
+        audioElement1.load();
+        audioElement1.play();
+        this.dataset.playing = 'true';
+    }
     pad1.onmouseleave = function() {
         if (document.selection) // IE
         document.selection.empty();
         else
         window.getSelection().removeAllRanges();
     }
-});
+
+}, false);
+
+audioElement1.addEventListener('ended', () => {
+    pad1.dataset.playing = 'false';
+}, false);
 
 // Pad 2
-pad2.addEventListener('click', function() {
-    audioElement2.load();
-    audioElement2.play();
+pad2.addEventListener('click', function() {  
+
+    // check if context is in suspended state (autoplay policy)
+    if (audioContext.state === 'suspended') {
+        audioContext.resume();
+    }
+
+    // play or pause track depending on state
+    if (this.dataset.playing === 'false') {
+        audioElement2.play();
+        this.dataset.playing = 'true';
+    } else if (this.dataset.playing === 'true') {
+        audioElement2.load();
+        audioElement2.play();
+        this.dataset.playing = 'true';
+    }
     pad2.onmouseleave = function() {
         if (document.selection) // IE
         document.selection.empty();
         else
         window.getSelection().removeAllRanges();
     }
-});
+
+}, false);
+
+audioElement2.addEventListener('ended', () => {
+    pad5.dataset.playing = 'false';
+}, false);
 
 // Pad 3
-pad3.addEventListener('click', function() {
-    audioElement3.load();
-    audioElement3.play();
+pad3.addEventListener('click', function() {  
+
+    // check if context is in suspended state (autoplay policy)
+    if (audioContext.state === 'suspended') {
+        audioContext.resume();
+    }
+
+    // play or pause track depending on state
+    if (this.dataset.playing === 'false') {
+        audioElement3.play();
+        this.dataset.playing = 'true';
+    } else if (this.dataset.playing === 'true') {
+        audioElement3.load();
+        audioElement3.play();
+        this.dataset.playing = 'true';
+    }
     pad3.onmouseleave = function() {
         if (document.selection) // IE
         document.selection.empty();
         else
         window.getSelection().removeAllRanges();
     }
-});
+
+}, false);
+
+audioElement3.addEventListener('ended', () => {
+    pad3.dataset.playing = 'false';
+}, false);
 
 // Pad 4
-pad4.addEventListener('click', function() {   
-    audioElement4.load();
-    audioElement4.play();
+pad4.addEventListener('click', function() {  
+
+    // check if context is in suspended state (autoplay policy)
+    if (audioContext.state === 'suspended') {
+        audioContext.resume();
+    }
+
+    // play or pause track depending on state
+    if (this.dataset.playing === 'false') {
+        audioElement4.play();
+        this.dataset.playing = 'true';
+    } else if (this.dataset.playing === 'true') {
+        audioElement4.load();
+        audioElement4.play();
+        this.dataset.playing = 'true';
+    }
     pad4.onmouseleave = function() {
         if (document.selection) // IE
         document.selection.empty();
         else
         window.getSelection().removeAllRanges();
-   }
-});
+    }
+
+}, false);
+
+audioElement4.addEventListener('ended', () => {
+    pad5.dataset.playing = 'false';
+}, false);
 
 // Pad 5
 pad5.addEventListener('click', function() {  
