@@ -6,6 +6,7 @@ volumeControl1.addEventListener('input', function() {
         else
         window.getSelection().removeAllRanges();
     }
+    document.getElementById( 'pad1' ).focus();
 }, false);
 
 
@@ -17,6 +18,7 @@ pannerControl1.addEventListener('input', function() {
         else
         window.getSelection().removeAllRanges();
     }
+    document.getElementById( 'pad1' ).focus();
 }, false);
 
 volumeControl2.addEventListener('input', function() {
@@ -27,6 +29,7 @@ volumeControl2.addEventListener('input', function() {
         else
         window.getSelection().removeAllRanges();
     }
+    document.getElementById( 'pad2' ).focus();
 }, false);
 
 pannerControl2.addEventListener('input', function() {
@@ -37,6 +40,7 @@ pannerControl2.addEventListener('input', function() {
         else
         window.getSelection().removeAllRanges();
     }
+    document.getElementById( 'pad2' ).focus();
 }, false);
 
 pannerControl3.addEventListener('input', function() {
@@ -45,8 +49,9 @@ pannerControl3.addEventListener('input', function() {
         if (document.selection) // IE
         document.selection.empty();
         else
-        window.getSelection().removeAllRanges();
+        window.getSelection().removeAllRanges();        
     }
+    document.getElementById( 'pad3' ).focus();
 }, false);
 
 volumeControl3.addEventListener('input', function() {
@@ -56,7 +61,8 @@ volumeControl3.addEventListener('input', function() {
     document.selection.empty();
     else
     window.getSelection().removeAllRanges();
-}
+    }
+    document.getElementById( 'pad3' ).focus();
 }, false);
 
 pannerControl4.addEventListener('input', function() {
@@ -67,6 +73,7 @@ pannerControl4.addEventListener('input', function() {
         else
         window.getSelection().removeAllRanges();
     }
+    document.getElementById( 'pad4' ).focus();
 }, false);
 
 volumeControl4.addEventListener('input', function() {
@@ -76,7 +83,8 @@ volumeControl4.addEventListener('input', function() {
     document.selection.empty();
     else
     window.getSelection().removeAllRanges();
-}
+    }
+    document.getElementById( 'pad4' ).focus();
 }, false);
 
 pannerControl5.addEventListener('input', function() {
@@ -87,6 +95,7 @@ pannerControl5.addEventListener('input', function() {
         else
         window.getSelection().removeAllRanges();
     }
+    document.getElementById( 'pad5' ).focus();
 }, false);
 
 volumeControl5.addEventListener('input', function() {
@@ -96,7 +105,8 @@ volumeControl5.addEventListener('input', function() {
     document.selection.empty();
     else
     window.getSelection().removeAllRanges();
-}
+    }
+    document.getElementById( 'pad5' ).focus();
 }, false);
 
 pannerControl6.addEventListener('input', function() {
@@ -107,6 +117,7 @@ pannerControl6.addEventListener('input', function() {
         else
         window.getSelection().removeAllRanges();
     }
+    document.getElementById( 'pad6' ).focus();
 }, false);
 
 volumeControl6.addEventListener('input', function() {
@@ -116,7 +127,8 @@ volumeControl6.addEventListener('input', function() {
     document.selection.empty();
     else
     window.getSelection().removeAllRanges();
-}
+    }
+    document.getElementById( 'pad6' ).focus();
 }, false);
 
 pannerControl7.addEventListener('input', function() {
@@ -127,6 +139,7 @@ pannerControl7.addEventListener('input', function() {
         else
         window.getSelection().removeAllRanges();
     }
+    document.getElementById( 'pad7' ).focus();
 }, false);
 
 volumeControl7.addEventListener('input', function() {
@@ -136,7 +149,8 @@ volumeControl7.addEventListener('input', function() {
     document.selection.empty();
     else
     window.getSelection().removeAllRanges();
-}
+    }
+    document.getElementById( 'pad7' ).focus();
 }, false);
 
 pannerControl8.addEventListener('input', function() {
@@ -147,6 +161,7 @@ pannerControl8.addEventListener('input', function() {
         else
         window.getSelection().removeAllRanges();
     }
+    document.getElementById( 'pad8' ).focus();
 }, false);
 
 volumeControl8.addEventListener('input', function() {
@@ -157,4 +172,5 @@ volumeControl8.addEventListener('input', function() {
     else
     window.getSelection().removeAllRanges();
     }
+    document.getElementById( 'pad8' ).focus();
 }, false);
